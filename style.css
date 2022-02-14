@@ -3,10 +3,193 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 /* styling global button */
-.btn{   
+.btn{
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #fff;
+    background: none;
+    text-align: center;
+    border: 3px solid #fff;
+    letter-spacing: 3px;
+    font-weight: 400;
 }
-/* styling section */
-.{
+/* styling header section */
+.header-section{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./imgs/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 220px;
+}
+.header-section .header-content h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.header-section .header-content p{
+    font-style: italic;
+    font-size: 20px;
+    fon-weight: 200;
+    line-height: 30px;
+    padding-bottom: 20px;
+    color: #f7f7f7;
+}
+.header-section .header-content button:hover{
+    background: #fff;
+    color: #6b8075;
+}
+/* styling main section */
+.main-section{
+    padding: 80px 120px;
+    width: 100%;
+    height: 1400px;
+    overflow: hidden;
+}
+/* styling about top section */
+.main-section .about-top{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 40px;
+    height: 500px;
+}
+/* styling about top left section */
+.main-section .about-top .top-left{
+    padding-top: 100px;
+}
+.main-section .about-top .top-left h2{
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.main-section .about-top .top-left p{
+    font-size: 20px;
+    font-weight: 200;
+    color: #333;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+.main-section .about-top .top-left button{
+    color: #000;
+    border: 3px solid #6b8075;
+}
+.main-section .about-top .top-left button:hover{
+    color: #fff;
+    background: #6b8075;
+}
+/* styling about top right section */
+.main-section .about-top .top-right{
+    position: relative;
+}
+.main-section .about-top .top-right .image{
+    position: absolute;
+    width: 500px;
+    box-shadow: -50px 50px 0 0 #9dbcba;
+    left: 20%;
+}
+.main-section .about-top .top-right .image img{
+    width: 500px;
+    box-shadow: 120px 0 0 -60px #d4d4d4;
+}
+/* styling about bottom section */
+.main-section .about-bottom{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 40px;
+    height: 500px;
+    padding-top: 160px;
+}
+/* styling about bottom left section */
+.main-section .about-bottom .bottom-left{
+    position: relative;
+}
+.main-section .about-bottom .bottom-left .image{
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    left: 6%;
+    box-shadow: -50px -50px 0px 0px #d4d4d4;
+}
+.main-section .about-bottom .bottom-left .image img{
+    width: 500px;
+    box-shadow: 50px 50px 0px 0px #9dbcba;
+}
+/* styling about bottom right section */
+.main-section .about-bottom .bottom-right{
+    padding-top: 100px;
+}
+.main-section .about-bottom .bottom-right h2{
+    font-size: 35px;
+    font-weight: 200;
+    padding-bottom: 30px;
+    color: #333;
+}
+.main-section .about-bottom .bottom-right p{
+    font-size: 20px;
+    font-weight: 200;
+    color: #333;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+.main-section .about-bottom .bottom-right button{
+    color: #000;
+    border: 3px solid #6b8075;
+}
+.main-section .about-bottom .bottom-right button:hover{
+    color: #fff;
+    background: #6b8075;
+}
+/* styling service section */
+.service-section{
+    background-image: url("./imgs/service.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* styling for mobile reponsiveness */
+@media only screen and (max-width: 480px){
+    /* for button */
+    .btn{
+        font-size: 15px;
+    }
+    /* styling for header section */
+    .header-section{
+        justify-content: center;
+        padding: 0 40px;
+        text-align: left;
+    }
+    .header-section .header-content{
+        padding-top: 40px;
+    }
+    .header-section .header-content h1{
+        font-size: 50px
+    }
+    .header-section .header-content p{
+        font-size: 18px;
+    }
+    /* styling for main section */
+    .main-section{
+        padding: 0 40px;
+    }
+    /* styling for about top section */
+    .main-section .about-top{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .main-section .about-bottom{
+    grid-template-columns: 1fr;
+        height: auto;
+    }
 }
